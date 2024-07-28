@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(98, 148, 234) 0%, rgb(2, 45, 132) 100%);
+}
+.heading{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+}
+.input-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.input-field{
+    all: unset;
+    width: 60%;
+    background-color: rgb(228, 228, 228);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    color: gray;
+}
+.input-box button{
+    all: unset;
+    background-color: rgb(255, 149, 0);
+    padding: 0 2rem;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.input-box button:hover{
+    background-color: rgb(159, 93, 0);
+}
+ul span{
+    cursor: pointer;
+    position: relative;
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+.tasklist{
+    align-self: self-start;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.tasklist li{
+    list-style: none;
+    font-family: poppins;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    font-size: large;
+    width: 600px;
+    user-select: none;
+
+
+}
+
+.tasklist li::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border :1px solid black;
+    top: 18px;
+    left: 10px;
+    cursor: pointer;
+   
+
+}
+.tasklist li.checked{
+    color: rgb(90, 90, 90);
+    text-decoration: line-through;
+}
+
+.tasklist li.checked::before{
+    background-color: rgb(255, 149, 0);
+}
+
+.tasklist li span{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.tasklist li span:hover{
+    color: gray;
+}
+
+.date-container{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.dateBtn{
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 67, 210);
+    color: white;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.dateBtn:hover{
+    background-color: rgb(0, 44, 138);
+}
